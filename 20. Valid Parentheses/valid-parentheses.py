@@ -74,5 +74,4 @@ class Solution(object):
         if len(reference) == 0:
             return True
         else: 
-            print("4")
             return False
