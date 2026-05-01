@@ -27,20 +27,37 @@
 # There will be at least one word in s.
 
 # My 1st Solution:
+# class Solution(object):
+#     def lengthOfLastWord(self, s):
+#         """
+#         :type s: str
+#         :rtype: int
+#         """
+#         words = []
+#         word = ""
+#         s = s.rstrip(' "')
+#         for x in s:
+#             if x != " " and x != "":
+#                 word += x
+#             else:
+#                 words.append(word)
+#                 word = ""
+#         result = (len(word))
+#         return result
+
+# my 2nd Solution:
 class Solution(object):
     def lengthOfLastWord(self, s):
         """
         :type s: str
         :rtype: int
         """
-        words = []
         word = ""
         s = s.rstrip(' "')
         for x in s:
             if x != " " and x != "":
                 word += x
             else:
-                words.append(word)
                 word = ""
         result = (len(word))
         return result
